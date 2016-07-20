@@ -12,9 +12,9 @@ message RequestEnvelope {
 	repeated .POGOProtos.Networking.Requests.Request requests = 4;
 
 	.POGOProtos.Networking.Envelopes.Unknown6 unknown6 = 6;
-	double latitude = 7;
-	double longitude = 8;
-	double altitude = 9;
+	fixed64 latitude = 7;
+	fixed64 longitude = 8;
+	fixed64 altitude = 9;
 	AuthInfo auth_info = 10;
 	.POGOProtos.Networking.Envelopes.AuthTicket auth_ticket = 11;
 	int64 unknown12 = 12;
